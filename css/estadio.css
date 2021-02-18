@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(249, 252, 253);
+  }
+  h1 {
+    color: rgb(18, 14, 26);
+    text-align: center;
+    font-family: Arial;
+    }
+
+h2{
+    color: black;
+    text-align: center;
+    font-family: Arial;
+}
+
+p{
+    padding:10px 10px 10px 10px;
+  margin-left: 3em;
+  margin-right: 3em;
+    
+    color: #0a0d13; 
+    font-family: Arial;
+ 
+}
