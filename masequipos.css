@@ -1,0 +1,45 @@
+.img-fluid{
+    width: 600px;
+    height: 350px;
+    display: block;
+    margin: auto;
+   
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+p {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.baloncesto2 {
+    width: 600px;
+ margin-left: 650px;
+}
+body {
+    background: rgb(226, 226, 221)
+}
+
+.balonmano2 {
+    width: 600px;
+    margin-left: 650px;
+}
+
+.hockey2 {
+    width: 600px;
+    margin-left: 650px;
+}
+
+.futbolsala2 {
+    width: 600px;
+    margin-left: 650px;
+}
