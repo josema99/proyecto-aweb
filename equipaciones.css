@@ -1,22 +1,22 @@
-body{
-    background:#2a6194
+body {
+    background:darkorange;
+    align-content:center
 }
-h1{
-    text-align: center;
-    color:yellow;
 
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .img-fluid {
 height: 670px;
 width: 100%;
 border-radius: 20px;
-padding: 18px;;
-
+padding: 18px;
 }
 
 
-.img-thumbnail{
+.img-thumbnail {
     width: 400px;
     height: 400px;
     border: 2px solid black;
@@ -30,7 +30,18 @@ h3 {
     margin-left: 120px;
     margin-top: 50px;
 }
-p {
-    color: black;
+strong {
     margin-top: 20px;
+    text-align: center;
+    border: 2px solid black;
 }
+
+div {
+    text-align: center;
+    margin-left: auto;
+}
+
+h4 {
+    text-align: center;
+}
+
