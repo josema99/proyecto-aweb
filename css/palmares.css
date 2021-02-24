@@ -1,0 +1,13 @@
+
+.mynav {
+    background-image: linear-gradient(to right, rgb(8, 8, 105), rgb(129, 20, 35));
+}
+
+.fondocontainer {
+    background-image: linear-gradient(to bottom right, rgb(8, 8, 105), rgb(129, 20, 35));
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: black;
+}

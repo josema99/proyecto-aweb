@@ -5,15 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alineación</title>
+    
 
-    <style>
-      body {
-        background-image: url('imagenes/alineacion-fondo.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
-      </style>
+    
 
     <link rel="stylesheet" href="css/alineacion.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,39 +26,60 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-primary bg-dark mynav">
     <a class="navbar-brand" href="index.html">Messirve</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="historia.html">Historia <span class="sr-only">(current)</span></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estadio.html">Estadio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Introduccion" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Alineación
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#porteros">Poteros</a>
+                    <a class="dropdown-item" href="#defensas">Defensas</a>
+                    <a class="dropdown-item" href="#centrocampistas">Centrocampistas</a>
+                    <a class="dropdown-item" href="#delanteros">Delanteros</a>
+                    <a class="dropdown-item" href="#cuerpotecnico">Cuerpo técnico</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="palmares.html">Palmarés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="masequipos.html">Triunfos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="estadio.html">Estadio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="alineacion.html">Alineación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="palmares.html">Palmarés</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="masequipos.html">Más Equipos</a>
-        </li>
-
-      </ul>
+        </ul>
     </div>
-  </nav>
+</nav>
+
 
   <div class="container">
-    <br>
+
 
     <div class="card-body">
       <h1 class="display-4 text-warning text-center">Alineación</h1>
     </div>
+
+    <div class="d-grid gap-2 text-center">
+      <a class="btn btn-outline-light" href="#porteros" role="button">Porteros</a>
+      <a class="btn btn-outline-light" href="#defensas" role="button">Defensas</a>
+      <a class="btn btn-outline-light" href="#centrocampistas" role="button">Centrocampistas</a>
+      <a class="btn btn-outline-light" href="#delanteros" role="button">Delanteros</a>
+      <a class="btn btn-outline-light" href="#cuerpotecnico" role="button">Cuerpo técnico</a>
+    </div>
+
+    <br>
     
     <div class="card bg-dark text-white">
       <img src="imagenes/alineacion-portada.jpg" class="card-img" alt="...">
@@ -72,45 +87,101 @@
         <h5 class="card-title">Primer equipo</h5>
       </div>
     </div>
-
+    
       <div class="card-body">
         <h1 class="display-4 text-warning text-center">Jugadores</h1>
       </div>
 
-      <div class="jumbotron jumbotron-fluid text-center text-body">
+      <div class="text-center"><iframe width="1120" height="630" src="https://www.youtube.com/embed/7w4_jStD3Fs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+      <br>
+      
+
+
+      <div class="jumbotron jumbotron-fluid text-center text-body" id="porteros" style="border:2px solid #0000ff;">
         <div class="container">
-          <h1 class="display-4">Porteros</h1>
+          <h1 class="display-4 text">Porteros</h1>
         </div>
       </div>
 
 
-      <div class="card-deck">
-        <div class="card">
-          <img src="imagenes/alineacion-terstegen.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Ter Stegen</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-terstegen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Ter Stegen</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                261
+                <br>
+                TEMPORADA 2020/2021:
+                25
+                <br>
+                PORTERÍA A CERO:
+                102
+                <br>
+                TEMPORADA 2020/2021:
+                6
+                <br>
+                PARADAS:
+                645
+                <br>
+                TEMPORADA 2020/2021:
+                55
+              </div>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-        <div class="card">
-          <img src="imagenes/alineacion-neto.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Neto</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-neto.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Neto</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                    aria-expanded="false" aria-controls="collapseExample2">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                16
+                <br>
+                TEMPORADA 2020/2021:
+                11
+                <br>
+                PORTERÍA A CERO:
+                5
+                <br>
+                TEMPORADA 2020/2021:
+                4
+                <br>
+                PARADAS
+                28
+                <br>
+                TEMPORADA 2020/2021:
+                23
+              </div>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-      </div>
+        </div>
+        
+      <br>
 
-
-      <hr>
-
-      <div class="jumbotron jumbotron-fluid text-center text-body">
+      <div class="jumbotron jumbotron-fluid text-center text-body" id="defensas" style="border:2px solid #0000ff;">
         <div class="container">
           <h1 class="display-4">Defensas</h1>
         </div>
@@ -122,78 +193,280 @@
           <div class="card">
             <img src="imagenes/alineacion-defensa-dest.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sergiño Dest</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Sergiño Dest</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                    aria-expanded="false" aria-controls="collapseExample3">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample3">
+              <div class="card card-body textotarjeta text-center">
+                  <p>PARTIDOS:
+                    25
+                    <br>
+                    TEMPORADA 2020/2021:
+                    25
+                    <br>
+                    GOLES:
+                    1
+                    <br>
+                    TEMPORADA 2020/2021:
+                    1
+                    <br>
+                    ASISTENCIAS:
+                    1
+                    <br>
+                    TEMPORADA 2020/2021
+                    1</p>
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-gerardpique.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Gerad Piqué</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Gerad Piqué</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample4" role="button"
+                    aria-expanded="false" aria-controls="collapseExample4">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample4">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                555
+                <br>
+                TEMPORADA 2020/2021:
+                12
+                <br>
+                GOLES:
+                48
+                <br>
+                TEMPORADA 2020/2021:
+                1
+                <br>
+                ASISTENCIAS:
+                7
+                <br>
+                TEMPORADA 2020/2021:
+                0
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-araujo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Ronald Araujo</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title text-center">Ronald Araujo</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                    aria-expanded="false" aria-controls="collapseExample5">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample5">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                26
+                <br>
+                TEMPORADA 2020/2021:
+                20
+                <br>
+                GOLES:
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-lenglet.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Clément Lenglet</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Clément Lenglet</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                    aria-expanded="false" aria-controls="collapseExample6">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample6">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                116
+                <br>
+                TEMPORADA 2020/2021:
+                32
+                <br>
+                GOLES:
+                7
+                <br>
+                TEMPORADA 2020/2021:
+                1
+                <br>
+                ASISTENCIAS:
+                1
+                <br>
+                TEMPORADA 2020/2021
+                0
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-jordialba.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Jordi Alba</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Jordi Alba</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                    aria-expanded="false" aria-controls="collapseExample7">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample7">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                366
+                <br>
+                TEMPORADA 2020/2021:
+                31
+                <br>
+                GOLES:
+                20
+                <br>
+                TEMPORADA 2020/2021:
+                3
+                <br>
+                ASISTENCIAS:
+                68
+                <br>
+                TEMPORADA 2020/2021:
+                8
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-sergiroberto.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sergi Roberto</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Sergi Roberto</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample8" role="button"
+                    aria-expanded="false" aria-controls="collapseExample8">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample8">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                294
+                <br>
+                TEMPORADA 2020/2021:
+                12
+                <br>
+                GOLES:
+                10
+                <br>
+                TEMPORADA 2020/2021:
+                1
+                <br>
+                ASISTENCIAS:
+                36
+                <br>
+                TEMPORADA 2020/2021:
+                2
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-samuelumtiti.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Samuel Umtiti</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Samuel Umtiti</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample9" role="button"
+                    aria-expanded="false" aria-controls="collapseExample9">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample9">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                126
+                <br>
+                TEMPORADA 2020/2021:
+                10
+                <br>
+                GOLES:
+                2
+                <br>
+                TEMPORADA 2020/2021:
+                0
+                <br>
+                ASISTENCIAS:
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                0
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-defensa-juniorfirpo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Junior Firpo</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Junior Firpo</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample10" role="button"
+                    aria-expanded="false" aria-controls="collapseExample10">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample10">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                37
+                <br>
+                TEMPORADA 2020/2021:
+                14
+                <br>
+                GOLES:
+                2
+                <br>
+                TEMPORADA 2020/2021:
+                1
+                <br>
+                ASISTENCIAS:
+                2
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
           </div>
         </div>
       </div>
 
 
-      <div class="jumbotron jumbotron-fluid text-center text-body">
+      <div class="jumbotron jumbotron-fluid text-center text-body" id="centrocampistas" style="border:2px solid #0000ff;">
         <div class="container">
           <h1 class="display-4">Centrocampistas</h1>
         </div>
@@ -204,75 +477,527 @@
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-sergiobusquets.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sergio Busquets</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Sergio Busquets</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample11" role="button"
+                    aria-expanded="false" aria-controls="collapseExample11">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample11">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                612
+                <br>
+                TEMPORADA 2020/2021:
+                32
+                <br>
+                GOLES:
+                15
+                <br>
+                TEMPORADA 2020/2021:
+                0
+                <br>
+                ASISTENCIAS:
+                31
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-pjanic.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Miralem Pjanic</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Miralem Pjanic</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample12" role="button"
+                    aria-expanded="false" aria-controls="collapseExample12">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample12">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                26
+                <br>
+                TEMPORADA 2020/2021:
+                26
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-riquipuig.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Ricard Puig</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title text-center">Ricard Puig</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample13" role="button"
+                    aria-expanded="false" aria-controls="collapseExample13">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample13">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                32
+                <br>
+                TEMPORADA 2020/2021:
+                17
+                <br>
+                GOLES
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                1
+                <br>
+                ASISTENCIAS:
+                3
+                <br>
+                TEMPORADA 2020/2021:
+                0
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-coutinho.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Philippe Coutinho</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Philippe Coutinho</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample14" role="button"
+                    aria-expanded="false" aria-controls="collapseExample14">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample14">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                89
+                <br>
+                TEMPORADA 2020/2021:
+                14
+                <br>
+                GOLES:
+                24
+                <br>
+                TEMPORADA 2020/2021:
+                3
+                <br>
+                ASISTENCIAS:
+                13
+                <br>
+                TEMPORADA 2020/2021:
+                2
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-pedri.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Pedri</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Pedri</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample15" role="button"
+                    aria-expanded="false" aria-controls="collapseExample15">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample15">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                35
+                <br>
+                TEMPORADA 2020/2021:
+                35
+                <br>
+                GOLES:
+                3
+                <br>
+                TEMPORADA 2020/2021:
+                3
+                <br>
+                ASISTENCIAS:
+                4
+                <br>
+                TEMPORADA 2020/2021:
+                4
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-matheus.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Matheus Fernandes</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title text-center">Matheus Fernandes</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample16" role="button"
+                    aria-expanded="false" aria-controls="collapseExample16">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample16">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
             <img src="imagenes/alineacion-centrocampista-dejong.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Frenkie de Jong</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Frenkie de Jong</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample17" role="button"
+                    aria-expanded="false" aria-controls="collapseExample17">
+                    Estadísticas
+                </a>
+            </p>
             </div>
+            <div class="collapse" id="collapseExample17">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                76
+                <br>
+                TEMPORADA 2020/2021:
+                34
+                <br>
+                GOLES
+                8
+                <br>
+                TEMPORADA 2020/2021:
+                6
+                <br>
+                ASISTENCIAS:
+                7
+                <br>
+                TEMPORADA 2020/2021:
+                4
+              </div>
+          </div>
           </div>
         </div>
       </div>
 
 
+      <div class="jumbotron jumbotron-fluid text-center text-body" id="delanteros" style="border:2px solid #0000ff;">
+        <div class="container">
+          <h1 class="display-4">Delanteros</h1>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-griezman.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Antoine Griezmann</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample18" role="button"
+                    aria-expanded="false" aria-controls="collapseExample18">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample18">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                82
+                <br>
+                TEMPORADA 2020/2021:
+                34
+                <br>
+                GOLES:
+                27
+                <br>
+                TEMPORADA 2020/2021:
+                12
+                <br>
+                ASISTENCIAS:
+                14
+                <br>
+                TEMPORADA 2020/2021:
+                10
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-braithwaite.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Martin Braithwaite</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample19" role="button"
+                    aria-expanded="false" aria-controls="collapseExample19">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample19">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                40
+                <br>
+                TEMPORADA 2020/2021:
+                29
+                <br>
+                GOLES
+                7
+                <br>
+                TEMPORADA 2020/2021:
+                6
+                <br>
+                ASISTENCIAS:
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-messi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Lionel Messi</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample20" role="button"
+                    aria-expanded="false" aria-controls="collapseExample20">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample20">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                762
+                <br>
+                TEMPORADA 2020/2021:
+                30
+                <br>
+                GOLES:
+                655
+                <br>
+                TEMPORADA 2020/2021:
+                21
+                <br>
+                ASISTENCIAS:
+                282
+                <br>
+                TEMPORADA 2020/2021:
+                6
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-dembele.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Ousmane Dembélé</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample21" role="button"
+                    aria-expanded="false" aria-controls="collapseExample21">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample21">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                102
+                <br>
+                TEMPORADA 2020/2021:
+                28
+                <br>
+                GOLES:
+                25
+                <br>
+                TEMPORADA 2020/2021:
+                6
+                <br>
+                ASISTENCIAS:
+                19
+                <br>
+                TEMPORADA 2020/2021:
+                4
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-trincao.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Trincão</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample22" role="button"
+                    aria-expanded="false" aria-controls="collapseExample22">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample22">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS:
+                31
+                <br>
+                TEMPORADA 2020/2021:
+                31
+                <br>
+                GOLES:
+                3
+                <br>
+                TEMPORADA 2020/2021:
+                3
+                <br>
+                ASISTENCIAS:
+                1
+                <br>
+                TEMPORADA 2020/2021:
+                1
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-delantero-fati.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Anssumane Fati</h5>
+              <p class="text-center">
+                <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample23" role="button"
+                    aria-expanded="false" aria-controls="collapseExample23">
+                    Estadísticas
+                </a>
+            </p>
+            </div>
+            <div class="collapse" id="collapseExample23">
+              <div class="card card-body textotarjeta text-center">
+                PARTIDOS.
+                43
+                <br>
+                TEMPORADA 2020/2021:
+                10
+                <br>
+                GOLES:
+                13
+                <br>
+                TEMPORADA 2020/2021:
+                5
+                <br>
+                ASISTENCIAS:
+                3
+                <br>
+                TEMPORADA 2020/2021:
+                2
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="jumbotron jumbotron-fluid text-center text-body" id="cuerpotecnico" style="border:2px solid #0000ff;">
+        <div class="container">
+          <h1 class="display-4">Cuerpo técnico</h1>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imagenes/alineacion-cuerpotecnico-koeman.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Koeman</h5>
+              <p>
+                El entrenador holandés llegó al banquillo del Barça en verano de 2020, después de haber jugado en el FC Barcelona durante seis temporadas (desde 1989 hasta 1995)
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="row" class="text-primary">SEGUNDO ENTRENADOR</th>
+              <th class="text-white">ALFRED SCHREUDER</th>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">TERCER ENTRENADOR</th>
+              <th class="text-white">HENRIK LARSSON</th>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">PREPARADORES FÍSICOS</th>
+              <th class="text-white">ALBERT ROCA, DANIEL ROMERO Y JAUME BARTRÉS</th>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">ENTRENADOR DE PORTEROS</th>
+              <th class="text-white">JOSÉ RAMÓN DE LA FUENTE</th>
+            </tr>
+          </thead>
+        </table>
+
+        <hr>
+        <br>
+
+        <div class="d-grid gap-2 text-center">
+          <a class="btn btn-outline-light" href="alineacion.html" role="button">Volver a Inicio</a>
+          <a class="btn btn-outline-light" href="palmares.html" target="_blank" role="button">Ver Palmarés</a>
+        </div>
+
+
+
+
+
+
+
+
 
     
-
-
-
-
   </div>
+
+
+  <br><br><br>
+
+        <footer>
+          <p class="text-secondary text-center">
+           © Messirve
+           &nbsp;
+           Términos legales
+           &nbsp;
+           Política de Privacidad
+           &nbsp;
+           Cookies
+           &nbsp;
+           Accesibilidad
+           &nbsp;
+          Contáctenos
+          </p>
+        </footer>
+
+
     
 </body>
 </html>
